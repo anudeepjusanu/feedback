@@ -9,6 +9,6 @@ router.route('/')
 router.route('/post')
     .post(controller.feedback_controller.postFeedback);
 router.route('/devicePost')
-    .post(controller.feedback_controller.postDeviceFeedback);
+    .get(controller.feedback_controller.postDeviceFeedback);
 module.exports = router;
 
